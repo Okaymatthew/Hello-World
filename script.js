@@ -3,18 +3,10 @@
 let total = 0;
 let highest = 0;
 let stuAvg= 0;  
-
-
-
-
 var names= [];
 var grade= [];
 var pos1 = [];
 var arr = [];
-
-//var namesPass =[];
-
-
 
 for (var i = 0; i < 10; i++) {             
     names.push(prompt('Enter The Ten Student Names | Student: ' + (i + 1))); 
@@ -40,17 +32,8 @@ function passingStu() {
     function passing(grade) {
             return grade[i] >= 60;      
     }
-    // while (!pass) {
-       // for (i=0;i<grade.length;i++)
-         //   if(names==arr[i]){
-           //     pass=true;
-             //   alert("ID# "+grade.filter(passing)+" Student Name: "+names[i]+"");
-           // }
-            //if(pass==false) 
-              //  alert("The ID# "+id+" does not exist");
-    
     document.getElementById("passingStu").innerHTML=("The Students who are passing are: "+grade.filter(passing)+""+names[i]+"");
-} 
+    } 
      // where can I include an [i] to obtain the index's of the 'arr' array(grade higher than 60) to then refer to [i] of 'names' to show which students have the grade higher than 60. I've tried sticking an [i] in alot of different places and it either bugs the whole program or returns undefined on the last variable +names+
     
     // where i have "+names+.." at the end of line 42 is where I'm trying to call on the name index's that correspond with 'passing'  
